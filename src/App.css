@@ -5,6 +5,12 @@
   align-items:center;
 }
 
+.instructions{
+  font-family: garamont;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
 
 .App-logo {
   height: 40vmin;

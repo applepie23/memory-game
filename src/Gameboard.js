@@ -1,17 +1,14 @@
 import './gameboard.css'
 import data from './image-info'
 import React, { useState } from 'react';
+import alldata from './all-image-info'
 
 
 function GameBoard(props){
+    const [mode, setMode] = useState("Easy")
 
     return(
         <div>
-            <div class="three-buttons">
-                <button>Easy</button>
-                <button>Intermediate</button>
-                <button>Dificult</button>
-            </div>
 
             <div class="scores">
                 <div class="score">Score: {props.score}</div>
@@ -19,18 +16,18 @@ function GameBoard(props){
             </div>
 
             <div class="game-board-container">
-                <ImagePiece clicked = {props.click} img_data={data[props.array[0]]} link={data[props.array[0]].src} name={data[props.array[0]].name}/>
-                <ImagePiece clicked = {props.click} img_data={data[props.array[1]]} link={data[props.array[1]].src} name={data[props.array[1]].name}/>
-                <ImagePiece clicked = {props.click} img_data={data[props.array[2]]} link={data[props.array[2]].src} name={data[props.array[2]].name}/>
-                <ImagePiece clicked = {props.click} img_data={data[props.array[3]]} link={data[props.array[3]].src} name={data[props.array[3]].name}/>
-                <ImagePiece clicked = {props.click} img_data={data[props.array[4]]} link={data[props.array[4]].src} name={data[props.array[4]].name}/>
-                <ImagePiece clicked = {props.click} img_data={data[props.array[5]]} link={data[props.array[5]].src} name={data[props.array[5]].name}/>
-                <ImagePiece clicked = {props.click} img_data={data[props.array[6]]} link={data[props.array[6]].src} name={data[props.array[6]].name}/>
-                <ImagePiece clicked = {props.click} img_data={data[props.array[7]]} link={data[props.array[7]].src} name={data[props.array[7]].name}/>
-                <ImagePiece clicked = {props.click} img_data={data[props.array[8]]} link={data[props.array[8]].src} name={data[props.array[8]].name}/>
-                <ImagePiece clicked = {props.click} img_data={data[props.array[9]]} link={data[props.array[9]].src} name={data[props.array[9]].name}/>
-                <ImagePiece clicked = {props.click} img_data={data[props.array[10]]} link={data[props.array[10]].src} name={data[props.array[10]].name}/>
-                <ImagePiece clicked = {props.click} img_data={data[props.array[11]]} link={data[props.array[11]].src} name={data[props.array[11]].name}/>
+                <ImagePiece clicked = {props.click} img_data={alldata[props.array[0]]} />
+                <ImagePiece clicked = {props.click} img_data={alldata[props.array[1]]} />
+                <ImagePiece clicked = {props.click} img_data={alldata[props.array[2]]} />
+                <ImagePiece clicked = {props.click} img_data={alldata[props.array[3]]} />
+                <ImagePiece clicked = {props.click} img_data={alldata[props.array[4]]} />
+                <ImagePiece clicked = {props.click} img_data={alldata[props.array[5]]} />
+                <ImagePiece clicked = {props.click} img_data={alldata[props.array[6]]} />
+                <ImagePiece clicked = {props.click} img_data={alldata[props.array[7]]} />
+                <ImagePiece clicked = {props.click} img_data={alldata[props.array[8]]} />
+                <ImagePiece clicked = {props.click} img_data={alldata[props.array[9]]} />
+                <ImagePiece clicked = {props.click} img_data={alldata[props.array[10]]} />
+                <ImagePiece clicked = {props.click} img_data={alldata[props.array[11]]} />
             </div>
         </div>
     )

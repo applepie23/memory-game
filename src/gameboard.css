@@ -57,8 +57,12 @@
 
 button{
     font-family: Garamond;
-    margin: 20px;
+    margin: 15px;
     margin-top:0px;
     font-weight:bolder;
     font-size: 15px;
+}
+
+.selected-button{
+    background-color:rgb(201, 201, 201)
 }
